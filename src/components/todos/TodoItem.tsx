@@ -33,6 +33,9 @@ export const TodoItem = ({ todo }: { todo: Todo }) => {
         >
           {todo.text}
         </span>
+        <span className="ml-auto text-gray-500 border border-gray-300 rounded-md p-2 text-xs hover:cursor-pointer hover:bg-gray-200">
+          Share 🔗
+        </span>
         <span
           onClick={deleteTodo}
           className="ml-auto text-red-500 hover:text-red-700 focus:outline-none hover:cursor-pointer hover:bg-gray-200 p-2 bg-red-200 rounded-full"
