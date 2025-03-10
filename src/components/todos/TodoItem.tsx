@@ -24,7 +24,7 @@ export const TodoItem = ({ todo }: { todo: Todo }) => {
           type="checkbox"
           checked={todo.completed}
           onChange={toggleTodo}
-          className="w-4 h-4 mr-2 rounded text-blue-600 focus:ring-blue-500 hover:cursor-pointer"
+          className="w-6 h-8 mr-2 rounded text-blue-600 focus:ring-blue-500 hover:cursor-pointer"
         />
         <span
           className={`text-gray-800 ${
@@ -35,7 +35,7 @@ export const TodoItem = ({ todo }: { todo: Todo }) => {
         </span>
         <span
           onClick={deleteTodo}
-          className="ml-auto text-red-500 hover:text-red-700 focus:outline-none hover:cursor-pointer hover:bg-gray-200 p-2 rounded-full"
+          className="ml-auto text-red-500 hover:text-red-700 focus:outline-none hover:cursor-pointer hover:bg-gray-200 p-2 bg-red-200 rounded-full"
         >
           🗑️
         </span>
